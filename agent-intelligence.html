@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agentic Framework Intelligence</title>
+  <meta name="description" content="A public-safe market map of agentic AI frameworks, coding agents, and autonomous agent runtimes." />
+  <style>
+    :root { --bg:#fff; --ink:#111; --muted:#5f6368; --line:rgba(0,0,0,.1); --soft:#f7f7f8; --blue:#0a72ef; --purple:#6d5dfc; --green:#0a9f6e; --amber:#a96b00; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; color:var(--ink); background:radial-gradient(circle at 8% 0%, rgba(10,114,239,.10), transparent 28%), radial-gradient(circle at 88% 10%, rgba(109,93,252,.10), transparent 24%), #fff; }
+    header { border-bottom:1px solid var(--line); background:rgba(255,255,255,.86); backdrop-filter:blur(16px); position:sticky; top:0; z-index:2; }
+    nav, main, footer { max-width:1120px; margin:0 auto; padding:0 24px; }
+    nav { min-height:68px; display:flex; align-items:center; justify-content:space-between; gap:16px; }
+    nav a { color:var(--muted); text-decoration:none; font-size:14px; margin-left:16px; }
+    nav a:hover { color:var(--ink); }
+    .brand { font-weight:750; letter-spacing:-.035em; }
+    main { padding-top:72px; padding-bottom:72px; }
+    .eyebrow { display:inline-flex; padding:7px 11px; border:1px solid var(--line); border-radius:999px; color:var(--blue); background:#eef6ff; font-size:12px; font-weight:650; }
+    h1 { max-width:920px; margin:22px 0 0; font-size:clamp(42px,8vw,84px); line-height:.95; letter-spacing:-.07em; }
+    .lead { max-width:780px; margin:24px 0 0; color:var(--muted); font-size:20px; line-height:1.65; }
+    section { margin-top:70px; }
+    h2 { font-size:clamp(28px,4vw,44px); line-height:1; letter-spacing:-.055em; margin:0 0 18px; }
+    h3 { margin:0 0 10px; font-size:20px; letter-spacing:-.035em; }
+    p, li { color:var(--muted); line-height:1.62; }
+    .grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:14px; }
+    .card { border:1px solid var(--line); background:rgba(255,255,255,.76); border-radius:18px; padding:22px; box-shadow:0 10px 30px rgba(0,0,0,.04); }
+    .label { font-size:11px; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); font-weight:750; margin-bottom:12px; }
+    .blue { color:var(--blue); } .purple { color:var(--purple); } .green { color:var(--green); } .amber { color:var(--amber); }
+    .list { display:grid; gap:12px; padding:0; list-style:none; }
+    .list li { border-left:3px solid var(--blue); padding:12px 14px; background:var(--soft); border-radius:12px; }
+    .matrix { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px; }
+    a { color:var(--blue); }
+    footer { padding-top:28px; padding-bottom:44px; border-top:1px solid var(--line); color:var(--muted); font-size:14px; }
+    @media (max-width:860px){ .grid,.matrix{grid-template-columns:1fr;} nav .links{display:none;} main{padding-top:48px;} }
+  </style>
+</head>
+<body>
+  <header>
+    <nav aria-label="Main navigation">
+      <div class="brand">Agentic Framework Intelligence</div>
+      <div class="links"><a href="index.html">Website Studio</a><a href="#map">Market map</a><a href="#signals">Signals</a><a href="#positioning">Positioning</a></div>
+    </nav>
+  </header>
+  <main>
+    <span class="eyebrow">Public market scan · last updated May 3, 2026</span>
+    <h1>Agentic AI frameworks are converging into always-on software operators.</h1>
+    <p class="lead">This page tracks public signals around OpenClaw, Hermes Agent, and adjacent coding-agent frameworks. It is designed as a public-safe intelligence brief: trends, examples, positioning, and source links without private operational details.</p>
+
+    <section id="signals">
+      <h2>What changed recently</h2>
+      <div class="grid">
+        <article class="card"><div class="label blue">surface convergence</div><h3>Terminal, IDE, GitHub, cloud, and chat are merging.</h3><p>Claude Code, OpenAI Codex, Devin, Cursor, Hermes, and OpenClaw are all expanding beyond a single interface. The category is shifting from “coding helper” to “multi-surface operator.”</p></article>
+        <article class="card"><div class="label purple">extensibility</div><h3>MCP, skills, plugins, and hooks are the new battleground.</h3><p>Recent releases across Claude Code, Codex, Cursor, Cline, Goose, Hermes, and OpenClaw emphasize plugin marketplaces, skills, hooks, subagents, and external tool servers.</p></article>
+        <article class="card"><div class="label green">autonomy</div><h3>Background and multi-agent work are mainstream.</h3><p>Persisted goals, async subagents, worktrees, cloud PR workers, and mission-control interfaces show users want agents to run longer tasks independently.</p></article>
+      </div>
+    </section>
+
+    <section id="map">
+      <h2>Market map</h2>
+      <div class="matrix">
+        <article class="card"><div class="label blue">persistent runtimes</div><h3>Hermes Agent</h3><p>Best understood as a user-owned, multi-channel autonomous runtime with memory, skills, scheduled workflows, messaging, and provider flexibility.</p></article>
+        <article class="card"><div class="label purple">mission control</div><h3>OpenClaw</h3><p>Best understood as a broad gateway/control-plane assistant with channel breadth, tool access, plugins, and a visible safety-hardening narrative.</p></article>
+        <article class="card"><div class="label green">coding CLIs</div><h3>Claude Code, Codex CLI, OpenCode, Aider, Goose</h3><p>Fast-moving terminal-first tools focused on repo work, code editing, tests, diffs, provider choice, and developer workflow ergonomics.</p></article>
+        <article class="card"><div class="label amber">IDE/cloud agents</div><h3>Cursor, Devin, Cline, Roo, OpenHands</h3><p>IDE-native, cloud, and software-engineering platforms competing on background execution, planning, subagents, sandboxes, and enterprise controls.</p></article>
+      </div>
+    </section>
+
+    <section id="positioning">
+      <h2>Where Hermes stands</h2>
+      <ul class="list">
+        <li><strong>Not just a coding CLI:</strong> Hermes is strongest as a persistent agent runtime that can operate from chat, terminal, scheduled workflows, and external triggers.</li>
+        <li><strong>Memory as wedge:</strong> Public discourse shows pain around re-explaining context, context pruning, AGENTS.md, and persistent project memory. Hermes should lead with memory plus reusable skills.</li>
+        <li><strong>Daily operations:</strong> Scheduled briefs, mailbox work, website updates, research scans, and cross-channel TODOs are examples of workflows that go beyond IDE copilots.</li>
+        <li><strong>Safety should be visible:</strong> The market is paying attention to approvals, credentials, sandboxing, policy, auditability, and “rogue agent” incidents.</li>
+      </ul>
+    </section>
+
+    <section id="examples">
+      <h2>Concrete public examples</h2>
+      <div class="grid">
+        <article class="card"><h3>OpenClaw security narrative</h3><p>OpenClaw published a public security-hardening post on April 30, 2026 after criticism, describing fixes around auth, privilege boundaries, sandboxing, env handling, and approvals.</p><p><a href="https://openclaw.ai/blog/openclaw-security-in-public">Read source</a></p></article>
+        <article class="card"><h3>Hermes curator release</h3><p>Hermes Agent v0.12.0 emphasized autonomous skill-library curation, self-improvement, new integrations, messaging channels, and TUI improvements.</p><p><a href="https://github.com/NousResearch/hermes-agent/releases/tag/v2026.4.30">Read source</a></p></article>
+        <article class="card"><h3>Codex and Claude ecosystem race</h3><p>Codex and Claude Code releases show rapid movement around plugins, hooks, subagents, permissions, persisted goals, and multi-surface coding workflows.</p><p><a href="https://github.com/openai/codex/releases">Codex releases</a> · <a href="https://github.com/anthropics/claude-code/releases">Claude Code releases</a></p></article>
+      </div>
+    </section>
+
+    <section id="methodology">
+      <h2>Methodology</h2>
+      <p>Initial scan covered roughly March 3 through May 3, 2026 using public/official sources: project websites, docs, GitHub releases, public forums, Hacker News, OpenAI/Cursor communities, YouTube search results, and public social/indexed snippets where normally accessible. Some social platforms and forums are only partially accessible without login or client-side rendering, so this page treats them as directional signals rather than complete coverage.</p>
+    </section>
+  </main>
+  <footer>Public-safe intelligence page. No private accounts, credentials, local paths, or operational secrets are included.</footer>
+</body>
+</html>
