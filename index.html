@@ -5,9 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Autonomous Website Studio</title>
   <meta name="description" content="A public-safe overview of an autonomous AI website studio team." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
   <style>
     :root {
       --bg: #ffffff;
@@ -30,7 +27,7 @@
 
     body {
       margin: 0;
-      font-family: 'Geist', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
       color: var(--ink);
       background:
         radial-gradient(circle at 8% 6%, rgba(10,114,239,0.12), transparent 27%),
@@ -76,7 +73,7 @@
       color: #fff;
       display: grid;
       place-items: center;
-      font-family: 'Geist Mono', ui-monospace, monospace;
+      font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', ui-monospace, monospace;
       font-size: 12px;
       box-shadow: var(--shadow);
     }
@@ -94,6 +91,12 @@
     }
 
     .navlinks a:hover { color: var(--ink); }
+
+    a:focus-visible, .pill:focus-visible {
+      outline: 3px solid rgba(10,114,239,0.35);
+      outline-offset: 3px;
+      border-radius: 8px;
+    }
 
     main {
       max-width: 1180px;
@@ -206,7 +209,7 @@
     .card.compact { min-height: 176px; }
 
     .label {
-      font-family: 'Geist Mono', ui-monospace, monospace;
+      font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', ui-monospace, monospace;
       font-size: 11px;
       text-transform: uppercase;
       letter-spacing: 0.06em;
@@ -222,7 +225,7 @@
       border-radius: 999px;
       background: rgba(17,17,17,0.05);
       color: var(--ink);
-      font-family: 'Geist Mono', ui-monospace, monospace;
+      font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', ui-monospace, monospace;
       font-size: 12px;
       letter-spacing: -0.01em;
     }
@@ -284,7 +287,7 @@
       color: white;
       display: grid;
       place-items: center;
-      font-family: 'Geist Mono', ui-monospace, monospace;
+      font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', ui-monospace, monospace;
       font-size: 12px;
     }
 
@@ -302,7 +305,7 @@
     }
 
     code {
-      font-family: 'Geist Mono', ui-monospace, monospace;
+      font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', ui-monospace, monospace;
       color: var(--ink);
       background: rgba(0,0,0,0.04);
       border-radius: 6px;
@@ -313,7 +316,8 @@
       .grid, .team-grid, .process { grid-template-columns: 1fr; }
       .section-head { align-items: start; flex-direction: column; }
       main { padding-top: 58px; }
-      .navlinks { display: none; }
+      .nav { align-items: flex-start; flex-direction: column; gap: 12px; }
+      .navlinks { flex-wrap: wrap; gap: 12px; font-size: 12px; }
     }
   </style>
 </head>
@@ -337,18 +341,18 @@
       A compact autonomous delivery model for building modern web products: executive-level direction from sponsors, Chief-of-Staff orchestration, CIO-owned technical delivery, and specialist agents coordinated as a team.
     </p>
     <div class="hero-actions" aria-label="Operating principles">
-      <span class="pill">Executive decisions only</span>
+      <span class="pill">Minimal executive burden</span>
       <span class="pill">Chief-of-Staff challenge loop</span>
       <span class="pill">Competitor benchmarking</span>
       <span class="pill">Modern web best practices</span>
       <span class="pill">QA before launch</span>
-      <span class="pill">Live URL delivery</span>
+      <span class="pill">Launch-ready delivery</span>
     </div>
 
     <section id="model">
       <div class="section-head">
         <h2>Operating model</h2>
-        <p class="section-note">The studio separates strategy, operating cadence, and technical execution so leaders make only the decisions that truly require them.</p>
+        <p class="section-note">These are the accountability layers: strategy, operating cadence, and technical execution are separated so leaders make only the decisions that truly require them.</p>
       </div>
       <div class="grid">
         <article class="card">
@@ -372,11 +376,11 @@
     <section id="team">
       <div class="section-head">
         <h2>Team members</h2>
-        <p class="section-note">Each role has a clear mission, personality, and handoff point so work can proceed in parallel without losing accountability.</p>
+        <p class="section-note">These are the working roles behind the model. Chief of Staff and CIO / Tech Lead appear again because they actively orchestrate and deliver the work, not just define governance.</p>
       </div>
       <div class="team-grid">
-        <article class="card compact"><div class="label blue">operations</div><span class="nickname">The Challenger</span><h3>Chief of Staff</h3><p>Turns executive intent into owners, decisions, cadence, and momentum while challenging passive execution.</p></article>
-        <article class="card compact"><div class="label purple">technology</div><span class="nickname">The Architect</span><h3>CIO / Tech Lead</h3><p>Owns technical architecture, implementation standards, QA gates, deployment, and specialist engineering coordination.</p></article>
+        <article class="card compact"><div class="label blue">operating role</div><span class="nickname">The Challenger</span><h3>Chief of Staff</h3><p>Turns executive intent into owners, decisions, cadence, and momentum while challenging passive execution.</p></article>
+        <article class="card compact"><div class="label purple">technical role</div><span class="nickname">The Architect</span><h3>CIO / Tech Lead</h3><p>Owns technical architecture, implementation standards, QA gates, deployment, and specialist engineering coordination.</p></article>
         <article class="card compact"><div class="label blue">strategy</div><span class="nickname">The Compass</span><h3>Product Strategist</h3><p>Turns the prompt into a product brief, audience, goal, scope, risks, and acceptance criteria.</p></article>
         <article class="card compact"><div class="label green">market</div><span class="nickname">The Scout</span><h3>Competitive Researcher</h3><p>Benchmarks similar products, current trends, best practices, trust signals, and opportunities to differentiate.</p></article>
         <article class="card compact"><div class="label purple">ux</div><span class="nickname">The Cartographer</span><h3>UX Architect</h3><p>Designs sitemap, navigation, user journeys, page sections, mobile flow, and accessibility structure.</p></article>
@@ -411,7 +415,7 @@
   </main>
 
   <footer>
-    <span>No private names, account identifiers, credentials, or operational infrastructure details are published here.</span>
+    <span>Public-safe: no private names, account identifiers, credentials, or operational infrastructure details are published here.</span>
     <span>Autonomous Website Studio · Chief of Staff + CIO operating model</span>
   </footer>
 </body>
