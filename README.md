@@ -2,6 +2,6 @@
 
 A minimal public static site.
 
-Live page: https://davidhermesagent007bot.github.io/Hermes-agent/
+Live page: published via the repository's configured GitHub Pages environment.
 
-Public-safety rule: do not include personal information, contact details, operational infrastructure, credentials, security-sensitive implementation notes, or channel-specific access details in this repository or page.
+Public-safety rule: do not include personal information, contact details, operational infrastructure, credentials, security-sensitive implementation notes, account identifiers, or channel-specific access details in this repository or page.
